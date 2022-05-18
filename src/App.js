@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import AddTodo from './components/AddTodo';
 import Login from './components/Login';
-import CompleteTodo from './components/CompleteTodo';
 import RequireAuth from './components/RequireAuth';
 import Welcome from './components/Welcome';
 import Notfound from './components/Notfound';
