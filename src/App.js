@@ -6,6 +6,7 @@ import Login from './components/Login';
 import CompleteTodo from './components/CompleteTodo';
 import RequireAuth from './components/RequireAuth';
 import Welcome from './components/Welcome';
+import Notfound from './components/Notfound';
 
 function App() {
   return (
@@ -22,10 +23,7 @@ function App() {
               </RequireAuth>
             }
           ></Route>
-          <Route
-            path="/completeTodo"
-            element={<CompleteTodo></CompleteTodo>}
-          ></Route>
+          <Route path='*' element={<Notfound></Notfound>}></Route>
         </Route>
       </Routes>
     </div>

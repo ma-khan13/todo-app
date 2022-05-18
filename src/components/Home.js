@@ -23,7 +23,9 @@ const Home = () => {
                   {user ? (
                     <>
                       <li>
-                        <Link to="/">Hello {userName}</Link>
+                        <Link className="text-info" to="/">
+                          Hello {userName}
+                        </Link>
                       </li>
                     </>
                   ) : (
@@ -37,9 +39,6 @@ const Home = () => {
 
                   {user ? (
                     <>
-                      <li>
-                        <Link to={"/completeTodo"}>Complete Task</Link>
-                      </li>
                       <li>
                         <Link to="/" onClick={handleSignOut}>
                           Log Out
