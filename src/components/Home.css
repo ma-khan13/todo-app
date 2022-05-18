@@ -1,0 +1,38 @@
+.app-heading{
+    background-color: rgb(98, 94, 94);
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-heading h1{
+    text-transform: uppercase;
+    color: white;
+}
+.app-nav{
+    padding-top: 25px;
+    /* background-color: aliceblue; */
+    border-right: 1px solid rgb(233, 231, 231);
+    height: calc(100vh - 70px);
+}
+.app-nav ul li{
+    list-style: none;
+}
+.app-nav ul li a{
+    text-decoration: none;
+    color: rgb(77, 71, 71);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.app-content{
+    /* background-color: aqua; */
+}
+
+.todo-container{
+    border: 1px solid rgb(223, 216, 216);
+    padding: 7px 0;
+    border-radius: 7px;
+    margin: 0 0 10px 2px !important;
+}
