@@ -22,7 +22,7 @@ const AddTodo = () => {
       email
     };
     console.log(taskDetails);
-    const url = "http://localhost:5000/add-task"
+    const url = "https://cryptic-sands-85946.herokuapp.com/add-task"
     fetch(url, {
       method: "POST",
       headers: {

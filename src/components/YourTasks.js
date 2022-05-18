@@ -8,14 +8,14 @@ const Todo = ({ loder }) => {
   let email = user?.email;
   const [todoTasks, setTodoTasks] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/todo-task/${email}`)
+    fetch(`https://cryptic-sands-85946.herokuapp.com/todo-task/${email}`)
       .then((res) => res.json())
       .then((data) => setTodoTasks(data));
   }, [email,loder, reCall]);
 
 const handleComplete = (_id) => {
   const status = 1;
-  const url = `http://localhost:5000/todo-complete/${_id}`;
+  const url = `https://cryptic-sands-85946.herokuapp.com/todo-complete/${_id}`;
   fetch(url, {
     method: "PUT",
     headers: {
@@ -36,7 +36,7 @@ const handleComplete = (_id) => {
     console.log(status);
     const proceed = window.confirm(`Are you sure want to delete?'`);
     if (proceed) {
-      const url = `http://localhost:5000/todo-delete/${_id}`;
+      const url = `https://cryptic-sands-85946.herokuapp.com/todo-delete/${_id}`;
       fetch(url, {
         method: "DELETE"
       })
